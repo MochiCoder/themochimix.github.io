@@ -1,2 +1,2 @@
-# mochimusic.github.io
+# The Mochi Mix
 Music blog
