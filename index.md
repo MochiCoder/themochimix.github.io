@@ -12,6 +12,9 @@
 ## Latest Posts
 Recent Song of the Days:
 <p style="color: #9370db;">
-- June 10 - Landgrab - MAVI, Earl Sweatshirt
-- June 9 - Cool About It - Amine, Lido
-- June 8 - Family Feud - JAY Z, Beyonce </p>
+<ul>
+<li>- June 10 - Landgrab - MAVI, Earl Sweatshirt</li>
+<li>- June 9 - Cool About It - Amine, Lido </li>
+<li>- June 8 - Family Feud - JAY Z, Beyonce</li>
+</p>
+</ul>
