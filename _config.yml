@@ -1,5 +1,3 @@
-theme: jekyll-theme-modernist
 title: The Mochi Mix
-description: Where I write my music thoughts
-author: MochiCoder
-baseurl: "themochimix.github.io"
+description: Place where I store my music ideas
+theme: jekyll-theme-modernist
