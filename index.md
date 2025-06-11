@@ -3,14 +3,15 @@
 </div>
 
 <div style="text-align: center">
-  <h1>Song of the Day: Cotton Candy - Lil Wayne Ft. 2 Chainz
+  <h2>Song of the Day: 
+    Cotton Candy - Lil Wayne Ft. 2 Chainz
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2ILSAavE0FTWeZ8pAZY5bS?utm_source=generator" width="50%" height="120" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-</h1>
+</h2>
 </div>
 
 ## Latest Posts
 Recent Song of the Days:
-
-June 10 - Landgrab - MAVI, Earl Sweatshirt
-June 9 - Cool About It - Amine, Lido
-June 8 - Family Feud - JAY Z, Beyonce
+<p style="color: #9370db;">
+* June 10 - Landgrab - MAVI, Earl Sweatshirt
+* June 9 - Cool About It - Amine, Lido
+* June 8 - Family Feud - JAY Z, Beyonce </p>
