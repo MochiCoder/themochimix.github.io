@@ -1,3 +1,5 @@
+
+
 ---
 layout: default
 ---
@@ -15,15 +17,10 @@ layout: default
       <header>
         <h1>{{ site.title | default: site.github.repository_name }}</h1>
         <nav>
-          <a href="/">Home</a>
-          <div class="dropdown">
-            <button class="dropbtn">Posts</button>
-            <div class="dropdown-content">
-              {% for post in site.posts %}
-                <a href="{{ post.url }}">{{ post.title }}</a>
-              {% endfor %}
-            </div>
-          </div>
+          <a href="/" {% if page.url == "/" %}class="active"{% endif %}>Home</a>
+          <a href="/about" {% if page.url == "/about" %}class="active"{% endif %}>About</a>
+          <a href="/music" {% if page.url == "/music" %}class="active"{% endif %}>Music</a>
+          <a href="/blog" {% if page.url == "/blog" %}class="active"{% endif %}>Blog</a>
         </nav>
       </header>
       {{ content }}
