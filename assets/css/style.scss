@@ -1,0 +1,39 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Change main colors */
+body {
+  background: FFEDEB_1; /* Light pink background */
+}
+
+header {
+  background: F7A4A4_1; /* Soft red header */
+}
+
+h1, h2 {
+  color: 8B4513_1; /* Brown text for headers */
+}
+
+/* Style the navigation */
+nav {
+  margin-top: 20px;
+  a {
+    display: inline-block;
+    padding: 8px 15px;
+    margin-right: 5px;
+    background: FFD1D1_1;
+    color: 8B4513_1;
+    text-decoration: none;
+    border-radius: 15px;
+
+    &:hover {
+      background: FF9494_1;
+    }
+
+    &.active {
+      background: FF9494_1;
+    }
+  }
+}
