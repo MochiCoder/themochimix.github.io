@@ -4,8 +4,8 @@
 
 <div style="text-align: center">
   <h2>Song of the Day: 
-    Anticipate - El Michels Affair Ft. Clairo
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6MGDifi2vBHgHLpqCUmX16?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    Anticipate - El Michels Affair Ft. Clairo </h2>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6MGDifi2vBHgHLpqCUmX16?utm_source=generator" width="50%" height="120" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </div>
 
 ## Latest Posts
