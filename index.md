@@ -4,7 +4,7 @@
 
 <div style="text-align: center">
   <h2>Song of the Day: 
-    Anticipate - El Michels Affair Ft. Clairo </h2>
+    Pale, Pale Moon - Jayme Lawson, Sinners Movie </h2>
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6MGDifi2vBHgHLpqCUmX16?utm_source=generator" width="50%" height="120" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </div>
 
@@ -12,6 +12,7 @@
 Recent Song of the Days:
 <ul>
   <p style="color: #9370db;">
+<li> June 12 - Anticipate - El Michels Affair Ft. Clairo </li>
 <li> June 11 -  Cotton Candy - Lil Wayne Ft. 2 Chainz </li>
 <li> June 10 - Landgrab - MAVI, Earl Sweatshirt</li>
 <li> June 9 - Cool About It - Amine, Lido </li>
