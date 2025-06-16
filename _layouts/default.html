@@ -1,21 +1,23 @@
-
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>{{ site.title | default: site.github.repository_name }}</h1>
-        <nav>
-          <a href="/blog" {% if page.url == "/blog" %}class="active"{% endif %}>Blog</a>
-        </nav>
-      </header>
-      {{ content }}
-    </div>
-  </body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="fade-in">{{ site.title }}</h1>
+            <nav class="fade-in">
+                <a href="/">Home</a>
+                <a href="/blog">Blog</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container fade-in">
+        {{ content }}
+    </main>
+</body>
 </html>
