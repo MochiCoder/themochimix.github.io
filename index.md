@@ -25,7 +25,7 @@ Recent Song of the Days:
 
   <a href="https://open.spotify.com/track/3gpofCUBcNhtLy2mN0ioE5?si=bb06fb30937e4c89
 " class="song-item" target="_blank">
-        <img src="https://open.spotify.com/track/3gpofCUBcNhtLy2mN0ioE5?si=bb06fb30937e4c89" alt="Pale Pale Moon">
+        <img src="https://open.spotify.com/track/6ku4gCfjdxmYpajNONAciN?si=e213cc7af3d1445a" alt="Pale Pale Moon">
         <div class="song-date">June 13</div>
     </a>
 
