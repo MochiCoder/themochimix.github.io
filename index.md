@@ -45,8 +45,7 @@ Recent Song of the Days:
         <div class="song-date">June 10</div>
     </a>
 
-  <a href="https://open.spotify.com/track/3gC7sGzLtC1we5Kg4fac7X?si=cfde6d41d69d44ed
-" class="song-item" target="_blank">
+  <a href="https://open.spotify.com/track/3gC7sGzLtC1we5Kg4fac7X?si=cfde6d41d69d44ed" class="song-item" target="_blank">
         <img src="https://open.spotify.com/track/3gC7sGzLtC1we5Kg4fac7X?si=cfde6d41d69d44ed" alt="Cool About It">
         <div class="song-date">June 9</div>
     </a>
