@@ -14,7 +14,7 @@ Recent Song of the Days:
 <div class="song-grid">
     <a href="https://open.spotify.com/track/59J5nzL1KniFHnU120dQzt?si=47080c14872b4103
 " class="song-item" target="_blank">
-        <img src="https://open.spotify.com/track/59J5nzL1KniFHnU120dQzt?si=47080c14872b4103" alt="wokeuplikethis">
+        <img src="https://i.scdn.co/image/ab67616d0000b273e31a279d267f3b3d8912e6f1" alt="wokeuplikethis">
         <div class="song-date">June 15</div>
     </a>
 
