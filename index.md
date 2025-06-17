@@ -12,13 +12,11 @@ Recent Song of the Days:
 <ul>
 
 <div class="song-grid">
-  <a href="https://open.spotify.com/track/2GZIuPFHBY7yanCa7pzxak
-" class="song-item" target="_blank">
+  <a href="https://open.spotify.com/track/2GZIuPFHBY7yanCa7pzxak" class="song-item" target="_blank">
         <img src="https://i.scdn.co/image/ab67616d0000b273c9ef3947d5f9aadf4148bcf3" alt="Documents">
         <div class="song-date">June 16</div>
     </a>
-    <a href="https://open.spotify.com/track/59J5nzL1KniFHnU120dQzt?si=47080c14872b4103
-" class="song-item" target="_blank">
+    <a href="https://open.spotify.com/track/59J5nzL1KniFHnU120dQzt?si=47080c14872b4103" class="song-item" target="_blank">
         <img src="https://i.scdn.co/image/ab67616d0000b273e31a279d267f3b3d8912e6f1" alt="wokeuplikethis">
         <div class="song-date">June 15</div>
     </a>
