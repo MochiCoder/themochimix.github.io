@@ -4,14 +4,19 @@
 
 <div style="text-align: center">
   <h2>Song of the Day: 
-    Documents - Slick Rick, Nas </h2>
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2GZIuPFHBY7yanCa7pzxak?utm_source=generator" width="50%" height="120" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    Boogie Wonderland - Earth, Wind & Fire </h2>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6ztstiyZL6FXzh4aG46ZPD?utm_source=generator" width="50%" height="150" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </div>
 ## Latest Posts
 Recent Song of the Days:
 <ul>
 
 <div class="song-grid">
+  <a href="https://open.spotify.com/track/2GZIuPFHBY7yanCa7pzxak
+" class="song-item" target="_blank">
+        <img src="https://i.scdn.co/image/ab67616d0000b273c9ef3947d5f9aadf4148bcf3" alt="Documents>
+        <div class="song-date">June 16</div>
+    </a>
     <a href="https://open.spotify.com/track/59J5nzL1KniFHnU120dQzt?si=47080c14872b4103
 " class="song-item" target="_blank">
         <img src="https://i.scdn.co/image/ab67616d0000b273e31a279d267f3b3d8912e6f1" alt="wokeuplikethis">
