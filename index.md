@@ -4,14 +4,17 @@
 
 <div style="text-align: center">
   <h2>Song of the Day: 
-    ART - Nemzzz, Latto </h2>
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/24fWOmkqeWMdAxiOiuXt0k?utm_source=generator" width="50%" height="200" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    Kitty Kat - Beyonce </h2>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/24fWOmkqeWMdAxiOiuXt0k?utm_source=generator" width="50%" height="150" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </div>
-## Latest Posts
+## Latest Posts]
 Recent Song of the Days:
 <ul>
 
 <div class="song-grid">
+   <a href="https://open.spotify.com/track/24fWOmkqeWMdAxiOiuXt0k?si=22ec9144babe472b" class="song-item" target="_blank">
+     <img src="https://i.scdn.co/image/ab67616d0000b2736bdc9c7558229c49e6a2a939" alt="ART">
+        <div class="song-date">June 18</div>
    <a href="https://open.spotify.com/track/6ztstiyZL6FXzh4aG46ZPD?si=51c9431544c9467b" class="song-item" target="_blank">
      <img src="https://i.scdn.co/image/ab67616d0000b2735ccd022a69a4da9551efd988" alt="Boogie Wonderland">
         <div class="song-date">June 17</div>
