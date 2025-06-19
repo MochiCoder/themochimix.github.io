@@ -7,7 +7,7 @@
     Kitty Kat - Beyonce </h2>
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5UhR5ud9gS6n0PgzsjZmQd?utm_source=generator" width="50%" height="150" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </div>
-## Latest Posts]
+## Latest Posts
 Recent Song of the Days:
 <ul>
 
