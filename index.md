@@ -9,10 +9,12 @@
 </div>
 ## Latest Posts
 Recent Song of the Days:
+
 <ul>
 
 <div class="song-grid">
-   <a href="https://open.spotify.com/track/24fWOmkqeWMdAxiOiuXt0k?si=22ec9144babe472b" class="song-item" target="_blank">
+   
+  <a href="https://open.spotify.com/track/24fWOmkqeWMdAxiOiuXt0k?si=22ec9144babe472b" class="song-item" target="_blank">
      <img src="https://i.scdn.co/image/ab67616d0000b2736bdc9c7558229c49e6a2a939" alt="ART">
         <div class="song-date">June 18</div>
    <a href="https://open.spotify.com/track/6ztstiyZL6FXzh4aG46ZPD?si=51c9431544c9467b" class="song-item" target="_blank">
@@ -64,5 +66,6 @@ Recent Song of the Days:
         <img src="https://i.scdn.co/image/ab67616d0000b2737513c4956ea5552caf02eab6" alt="Family Feud">
         <div class="song-date">June 8</div>
     </a>
+
 </div>
 </ul>
