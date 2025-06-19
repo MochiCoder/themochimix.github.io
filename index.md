@@ -13,7 +13,7 @@ Recent Song of the Days:
 
 <div class="song-grid">
    <a href="https://open.spotify.com/track/6ztstiyZL6FXzh4aG46ZPD?si=51c9431544c9467b" class="song-item" target="_blank">
-        <img src="https://i.scdn.co/image/ab67616d0000b27302d3e2b3729135c22156bed0" alt=“Boogie Wonderland”>
+     <img src="https://i.scdn.co/image/ab67616d0000b273c9ef3947d5f9aadf4148bcf3" alt="Documents">
         <div class="song-date">June 17</div>
     </a>
   <a href="https://open.spotify.com/track/2GZIuPFHBY7yanCa7pzxak" class="song-item" target="_blank">
