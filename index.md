@@ -4,16 +4,20 @@
 
 <div style="text-align: center">
   <h2>Song of the Day: 
-    Kitty Kat - Beyonce </h2>
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5UhR5ud9gS6n0PgzsjZmQd?utm_source=generator" width="50%" height="150" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    Illegal - Pinkpantheress </h2>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1WmBVbFmLt0w6zPP37TeCG?utm_source=generator" width="50%" height="150" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </div>
+
 ## Latest Posts
 Recent Song of the Days:
 
 <ul>
 
 <div class="song-grid">
-   
+
+  <a href="https://open.spotify.com/track/5UhR5ud9gS6n0PgzsjZmQd?si=1afee0a3850241ea" class="song-item" target="_blank">
+     <img src="https://i.scdn.co/image/ab67616d0000b273632e4eafb2ffba59a2ae4500" alt="Kitty Kat">
+        <div class="song-date">June 19</div> 
   <a href="https://open.spotify.com/track/24fWOmkqeWMdAxiOiuXt0k?si=22ec9144babe472b" class="song-item" target="_blank">
      <img src="https://i.scdn.co/image/ab67616d0000b2736bdc9c7558229c49e6a2a939" alt="ART">
         <div class="song-date">June 18</div>
@@ -66,6 +70,5 @@ Recent Song of the Days:
         <img src="https://i.scdn.co/image/ab67616d0000b2737513c4956ea5552caf02eab6" alt="Family Feud">
         <div class="song-date">June 8</div>
     </a>
-
-</div>
-</ul>
+    </div>
+    </ul>
