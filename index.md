@@ -70,5 +70,3 @@ Recent Song of the Days:
         <img src="https://i.scdn.co/image/ab67616d0000b2737513c4956ea5552caf02eab6" alt="Family Feud">
         <div class="song-date">June 8</div>
     </a>
-    </div>
-    </ul>
