@@ -4,8 +4,8 @@
 
 <div style="text-align: center">
   <h2>Song of the Day: 
-    Illegal - Pinkpantheress </h2>
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1WmBVbFmLt0w6zPP37TeCG?utm_source=generator" width="50%" height="150" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    WAIT FOR U - Future, Drake, Tems </h2>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/59nOXPmaKlBfGMDeOVGrIK?utm_source=generator" width="50%" height="150" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </div>
 
 ## Latest Posts
@@ -15,6 +15,12 @@ Recent Song of the Days:
 
 <div class="song-grid">
 
+<a href="https://open.spotify.com/track/2PcZiMr9bRNtRikrN7s6bL?si=f7a07d47cec24e11" class="song-item" target="_blank">
+     <img src="https://i.scdn.co/image/ab67616d0000b273572a0f748d0801d7bea5f245" alt="Bodies">
+  <div class="song-date">June 21</div> 
+<a href="https://open.spotify.com/track/1WmBVbFmLt0w6zPP37TeCG?si=8a23f3df38c441f6" class="song-item" target="_blank">
+     <img src="https://i.scdn.co/image/ab67616d0000b273dd4912edb4982f53a381b98e" alt="Illegal">
+        <div class="song-date">June 20</div> 
   <a href="https://open.spotify.com/track/5UhR5ud9gS6n0PgzsjZmQd?si=1afee0a3850241ea" class="song-item" target="_blank">
      <img src="https://i.scdn.co/image/ab67616d0000b273632e4eafb2ffba59a2ae4500" alt="Kitty Kat">
         <div class="song-date">June 19</div> 
