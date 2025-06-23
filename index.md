@@ -4,8 +4,8 @@
 
 <div style="text-align: center">
   <h2>Song of the Day: 
-    WAIT FOR U - Future, Drake, Tems </h2>
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/59nOXPmaKlBfGMDeOVGrIK?utm_source=generator" width="50%" height="150" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    Green Light - John Legend, Andre 3000 </h2>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/72by3Re4C3eVEBXvsUo0zV?utm_source=generator" width="50%" height="150" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </div>
 
 ## Latest Posts
@@ -15,6 +15,9 @@ Recent Song of the Days:
 
 <div class="song-grid">
 
+<a href="https://open.spotify.com/track/59nOXPmaKlBfGMDeOVGrIK?si=b491a0c6e07940d2" class="song-item" target="_blank">
+     <img src="https://i.scdn.co/image/ab67616d0000b27386badd635b69aea887862214" alt="WAIT FOR U">
+  <div class="song-date">June 22</div> 
 <a href="https://open.spotify.com/track/2PcZiMr9bRNtRikrN7s6bL?si=f7a07d47cec24e11" class="song-item" target="_blank">
      <img src="https://i.scdn.co/image/ab67616d0000b273572a0f748d0801d7bea5f245" alt="Bodies">
   <div class="song-date">June 21</div> 
