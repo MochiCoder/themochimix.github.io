@@ -4,8 +4,8 @@
 
 <div style="text-align: center">
   <h2>Song of the Day: 
-    Green Light - John Legend, Andre 3000 </h2>
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/72by3Re4C3eVEBXvsUo0zV?utm_source=generator" width="50%" height="150" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    Free Lunch - Isaiah Rashad </h2>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5FX89IUKm9QJT9ymrmyK4k?utm_source=generator" width="50%" height="150" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </div>
 
 ## Latest Posts
@@ -15,6 +15,12 @@ Recent Song of the Days:
 
 <div class="song-grid">
 
+<a href="https://open.spotify.com/track/25cUhiAod71TIQSNicOaW3?si=e3a5dd87bfbc459e" class="song-item" target="_blank">
+     <img src="https://i.scdn.co/image/ab67616d0000b273fe113f478616e62a8fe14108" alt="Adorn">
+  <div class="song-date">June 24</div> 
+<a href="https://open.spotify.com/track/72by3Re4C3eVEBXvsUo0zV?si=6f1500159ad94178" class="song-item" target="_blank">
+     <img src="https://i.scdn.co/image/ab67616d0000b273d70bbffa859a9f9ca6f10496" alt="Green Light">
+  <div class="song-date">June 23</div> 
 <a href="https://open.spotify.com/track/59nOXPmaKlBfGMDeOVGrIK?si=b491a0c6e07940d2" class="song-item" target="_blank">
      <img src="https://i.scdn.co/image/ab67616d0000b27386badd635b69aea887862214" alt="WAIT FOR U">
   <div class="song-date">June 22</div> 
