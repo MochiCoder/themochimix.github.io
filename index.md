@@ -4,8 +4,8 @@
 
 <div style="text-align: center">
   <h2>Song of the Day: 
-    Free Lunch - Isaiah Rashad </h2>
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5FX89IUKm9QJT9ymrmyK4k?utm_source=generator" width="50%" height="150" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    either on or off the drugs - JPEGMAFIA</h2>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3EWaU5exMayFzQMkIfTX7w?utm_source=generator" width="50%" height="150" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </div>
 
 ## Latest Posts
@@ -15,6 +15,12 @@ Recent Song of the Days:
 
 <div class="song-grid">
 
+<a href="https://open.spotify.com/track/2RdEC8Ff83WkX7kDVCHseE?si=2d2a8016ff754300" class="song-item" target="_blank">
+     <img src="https://i.scdn.co/image/ab67616d0000b27349bdbd5880802dcbe4e0b2dd" alt="party 4 u">
+  <div class="song-date">June 26</div> 
+<a href="https://open.spotify.com/track/5FX89IUKm9QJT9ymrmyK4k?si=6e69beb414db4a19" class="song-item" target="_blank">
+     <img src="https://i.scdn.co/image/ab67616d0000b273ed5e0ac2ad3fd4932103bd19" alt="Free Lunch">
+  <div class="song-date">June 25</div> 
 <a href="https://open.spotify.com/track/25cUhiAod71TIQSNicOaW3?si=e3a5dd87bfbc459e" class="song-item" target="_blank">
      <img src="https://i.scdn.co/image/ab67616d0000b273fe113f478616e62a8fe14108" alt="Adorn">
   <div class="song-date">June 24</div> 
