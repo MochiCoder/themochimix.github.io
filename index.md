@@ -4,8 +4,8 @@
 
 <div style="text-align: center">
   <h2>Song of the Day: 
-    either on or off the drugs - JPEGMAFIA</h2>
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3EWaU5exMayFzQMkIfTX7w?utm_source=generator" width="50%" height="150" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+   Darling, I - Tyler, The Creator</h2>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0VaeksJaXy5R1nvcTMh3Xk?utm_source=generator" width="50%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </div>
 
 ## Latest Posts
@@ -15,6 +15,15 @@ Recent Song of the Days:
 
 <div class="song-grid">
 
+<a href="https://open.spotify.com/track/45J4avUb9Ni0bnETYaYFVJ?si=93365c78ee194987" class="song-item" target="_blank">
+     <img src="https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58" alt="luther">
+  <div class="song-date">June 29</div> 
+<a href="https://open.spotify.com/track/6hh74g3EXXM8dF1Boamcyn?si=787f54c644524b26" class="song-item" target="_blank">
+     <img src="https://i.scdn.co/image/ab67616d0000b273c61adbb5db3191376d7cde7a" alt="Life is Beautiful">
+  <div class="song-date">June 28</div> 
+<a href="https://open.spotify.com/track/3EWaU5exMayFzQMkIfTX7w?si=502c7495bcfe43ec" class="song-item" target="_blank">
+     <img src="https://i.scdn.co/image/ab67616d0000b27314ed6f5625ea349c7bda4181" alt="either on or off the drugs">
+  <div class="song-date">June 27</div> 
 <a href="https://open.spotify.com/track/2RdEC8Ff83WkX7kDVCHseE?si=2d2a8016ff754300" class="song-item" target="_blank">
      <img src="https://i.scdn.co/image/ab67616d0000b27349bdbd5880802dcbe4e0b2dd" alt="party 4 u">
   <div class="song-date">June 26</div> 
