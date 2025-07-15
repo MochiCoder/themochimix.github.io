@@ -16,7 +16,7 @@ Recent Song of the Days:
 <div class="song-grid">
 
 <a href="https://open.spotify.com/track/3Tc6dHggtSaZqlKRhzkeub?si=aa8e683271c84826" class="song-item" target="_blank">
-     <img src="https://i.scdn.co/image/ab67616d0000b2734fe227fca31cc64bc03ad854” alt="Love, Love, Love">
+     <img src="https://i.scdn.co/image/ab67616d0000b2734fe227fca31cc64bc03ad854" alt="Love, Love, Love">
   <div class="song-date">July 13</div>     </a>
 <a href="https://open.spotify.com/track/57GsLpRtEtrzcPGPop20rS?si=9172cfeee9ab4abd" class="song-item" target="_blank">
      <img src="https://i.scdn.co/image/ab67616d0000b2739d22b70fe52340efb60ab681" alt=“What did I Miss?”>
@@ -31,26 +31,28 @@ Recent Song of the Days:
      <img src="https://i.scdn.co/image/ab67616d0000b27305ac3e026324594a31fad7fb" alt=“Get You”>
   <div class="song-date">July 9</div>     </a>
 <a href="https://open.spotify.com/track/0JXXNGljqupsJaZsgSbMZV?si=2c3cff235eeb4465" class="song-item" target="_blank">
-     <img src="https://i.scdn.co/image/ab67616d0000b273d5a8395b0d80b8c48a5d851c” alt="Sure Thing" >
+     <img src="https://i.scdn.co/image/ab67616d0000b273d5a8395b0d80b8c48a5d851c" alt="Sure Thing" >
   <div class="song-date">July 8</div>     </a>
 <a href="https://open.spotify.com/track/7yvdp8dqmxExSJwT2fn6Xq?si=b2dd63f80fc24e20" class="song-item" target="_blank">
      <img src="https://i.scdn.co/image/ab67616d0000b273b1150f77ae2fbf0d5b4715fc" alt=“Binz”>
   <div class="song-date">July 7</div>     </a>
 <a href="https://open.spotify.com/track/42V7F468ieBbxKwaxBlpls?si=90dbb66db17c4b31" class="song-item" target="_blank">
-     <img src="https://i.scdn.co/image/ab67616d0000b2739253fc2431dc4eb3c3c8c103” alt="Much Better Off”>
+     <img src="https://i.scdn.co/image/ab67616d0000b2739253fc2431dc4eb3c3c8c103" alt="Much Better Off”>
   <div class="song-date">July 6</div>     </a>
 <a href="https://open.spotify.com/track/2g6tReTlM2Akp41g0HaeXN?si=0ed1a719fbfe4cd8" class="song-item" target="_blank">
-     <img src="https://i.scdn.co/image/ab67616d0000b2732e02117d76426a08ac7c174f” alt="Die Hard”>
+     <img src="https://i.scdn.co/image/ab67616d0000b2732e02117d76426a08ac7c174f" alt="Die Hard”>
   <div class="song-date">July 5</div>     </a>
 <a href="https://open.spotify.com/track/6l8mgVN9Xf1hiDIFGA6CTE?si=8be3238c6bb1495a" class="song-item" target="_blank">
      <img src="https://i.scdn.co/image/ab67616d0000b27378643be90cd7c5ec75675855" alt=“AMERICA HAS A PROBLEM”>
   <div class="song-date">July 4</div>     </a>
 <a href="https://open.spotify.com/track/7AswIMJtp31Y62pgWFoQJI?si=d0ec8a22beea4e2b" class="song-item" target="_blank">
-     <img src="https://i.scdn.co/image/ab67616d0000b273bcae489ac593de44bd9bda54” alt="The Love I Lost”>
-  <div class="song-date">July 3</div>     </a>
+     <img src="https://i.scdn.co/image/ab67616d0000b273bcae489ac593de44bd9bda54" alt="The Love I Lost”>
+  <div class="song-date">July 3</div>     
+</a>
 <a href="https://open.spotify.com/track/4IU1RL4BKvFyXtbTwaHAvW?si=fdfbe5c2037c4e43" class="song-item" target="_blank">
-     <img src="https://i.scdn.co/image/ab67616d0000b273bd3cf0e884569cd4048cbe37” alt="Ventura Highway”>
-  <div class="song-date">July 2</div>     </a>
+     <img src= "https://i.scdn.co/image/ab67616d0000b273bd3cf0e884569cd4048cbe37" alt="Ventura Highway">
+  <div class="song-date">July 2</div>     
+</a>
 <a href="https://open.spotify.com/track/0CM8lJRuiIczcAwm9CqjNE?si=c58204232b764cff" class="song-item" target="_blank">
      <img src="https://i.scdn.co/image/ab67616d0000b273c89a2be14bbf9ba8c125763a" alt="Mr. Put it On">
   <div class="song-date">July 1</div>      
