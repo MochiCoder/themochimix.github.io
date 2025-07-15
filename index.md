@@ -4,8 +4,8 @@
 
 <div style="text-align: center">
   <h2>Song of the Day: 
-   Bodyguard - Beyoncé </h2>
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6Y4rniIxibegzsg8cdWAWV?utm_source=generator" width="50%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+   2000 EXCURSION - Jackboys </h2>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6Gp3pYkydEOkl8EHHJxa9s?utm_source=generator" width="50%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </div>
 
 ## Latest Posts
@@ -15,6 +15,10 @@ Recent Song of the Days:
 
 <div class="song-grid">
 
+
+<a href="https://open.spotify.com/track/6Y4rniIxibegzsg8cdWAWV?si=591dbc649bf34221" class="song-item" target="_blank">
+     <img src="https://i.scdn.co/image/ab67616d0000b2731572698fff8a1db257a53599" alt="Bodyguard">
+  <div class="song-date">July 14</div> 
 <a href="https://open.spotify.com/track/3Tc6dHggtSaZqlKRhzkeub?si=aa8e683271c84826" class="song-item" target="_blank">
      <img src="https://i.scdn.co/image/ab67616d0000b2734fe227fca31cc64bc03ad854" alt="Love, Love, Love">
   <div class="song-date">July 13</div>     </a>
