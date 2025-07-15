@@ -25,7 +25,7 @@ Recent Song of the Days:
      <img src="https://i.scdn.co/image/ab67616d0000b2731c1c33c63cdbcb5788975a93" alt=“Palace/Curse”>
   <div class="song-date">July 11</div> 
 <a href="https://open.spotify.com/track/6cEguiQecbXrFlsnMi2ysr?si=f85410229480424d" class="song-item" target="_blank">
-     <img src="https://i.scdn.co/image/ab67616d0000b273b1150f77ae2fbf0d5b4715fc" alt=“Come and See Me”>
+     <img src="https://i.scdn.co/image/ab67616d0000b273240b49b7795e0611ccf416b7" alt=“Come and See Me”>
   <div class="song-date">July 10</div> 
 <a href="https://open.spotify.com/track/2uP6t2J5MEwhr9rDkAAzwh?si=5638808352e64a85" class="song-item" target="_blank">
      <img src="https://i.scdn.co/image/ab67616d0000b27305ac3e026324594a31fad7fb" alt=“Get You”>
