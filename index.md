@@ -4,7 +4,7 @@
 
 <div style="text-align: center">
   <h2>Song of the Day: 
-   Bodyguard - Beyoncé/h2>
+   Bodyguard - Beyoncé </h2>
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6Y4rniIxibegzsg8cdWAWV?utm_source=generator" width="50%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </div>
 
