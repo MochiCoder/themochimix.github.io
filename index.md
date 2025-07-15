@@ -55,7 +55,7 @@ Recent Song of the Days:
      <img src="https://i.scdn.co/image/ab67616d0000b273c89a2be14bbf9ba8c125763a” alt="Mr. Put it On”>
   <div class="song-date">July 1</div> 
 <a href="https://open.spotify.com/track/0VaeksJaXy5R1nvcTMh3Xk?si=67529ffaee724f51" class="song-item" target="_blank">
-     <img src="https://i.scdn.co/image/ab67616d0000b273124e9249fada4ff3c3a0739c" alt="Darling, I”>
+     <img src="https://i.scdn.co/image/ab67616d0000b273124e9249fada4ff3c3a0739c" alt="Darling, I">
   <div class="song-date">June 30</div> 
 <a href="https://open.spotify.com/track/45J4avUb9Ni0bnETYaYFVJ?si=93365c78ee194987" class="song-item" target="_blank">
      <img src="https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58" alt="luther">
