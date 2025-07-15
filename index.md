@@ -16,7 +16,7 @@ Recent Song of the Days:
 <div class="song-grid">
 
 <a href="https://open.spotify.com/track/3Tc6dHggtSaZqlKRhzkeub?si=aa8e683271c84826" class="song-item" target="_blank">
-     <img src="https://i.scdn.co/image/ab67616d0000b2734fe227fca31cc64bc03ad854” alt=“Love, Love, Love”>
+     <img src="https://i.scdn.co/image/ab67616d0000b2734fe227fca31cc64bc03ad854” alt="Love, Love, Love">
   <div class="song-date">July 13</div> 
 <a href="https://open.spotify.com/track/57GsLpRtEtrzcPGPop20rS?si=9172cfeee9ab4abd" class="song-item" target="_blank">
      <img src="https://i.scdn.co/image/ab67616d0000b2739d22b70fe52340efb60ab681" alt=“What did I Miss?”>
@@ -31,7 +31,7 @@ Recent Song of the Days:
      <img src="https://i.scdn.co/image/ab67616d0000b27305ac3e026324594a31fad7fb" alt=“Get You”>
   <div class="song-date">July 9</div> 
 <a href="https://open.spotify.com/track/0JXXNGljqupsJaZsgSbMZV?si=2c3cff235eeb4465" class="song-item" target="_blank">
-     <img src="https://i.scdn.co/image/ab67616d0000b273d5a8395b0d80b8c48a5d851c” alt=“Sure Thing”>
+     <img src="https://i.scdn.co/image/ab67616d0000b273d5a8395b0d80b8c48a5d851c” alt="Sure Thing" >
   <div class="song-date">July 8</div> 
 <a href="https://open.spotify.com/track/7yvdp8dqmxExSJwT2fn6Xq?si=b2dd63f80fc24e20" class="song-item" target="_blank">
      <img src="https://i.scdn.co/image/ab67616d0000b273b1150f77ae2fbf0d5b4715fc" alt=“Binz”>
