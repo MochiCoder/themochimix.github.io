@@ -1,0 +1,747 @@
+---
+layout: none
+permalink: /tools/add-song/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Song — The Mochi Mix</title>
+  <style>
+    :root {
+      --sakura-pink: #FFE4E8;
+      --matcha-green: #E8F3D6;
+      --cream: #FFF9F0;
+      --lilac: #E6E6FA;
+      --soft-gray: #4A4A4A;
+      --cloud: #FFFFFF;
+      --accent: #FF9EAA;
+      --accent-dark: #e8849a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--cream);
+      color: var(--soft-gray);
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    header {
+      background: var(--cloud);
+      padding: 16px 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header a {
+      color: var(--soft-gray);
+      text-decoration: none;
+      font-size: 0.9em;
+      padding: 6px 14px;
+      border-radius: 20px;
+      transition: background 0.2s;
+    }
+
+    header a:hover {
+      background: var(--sakura-pink);
+    }
+
+    header h1 {
+      font-size: 1.1em;
+      font-weight: 500;
+      color: var(--soft-gray);
+    }
+
+    .page-wrapper {
+      max-width: 680px;
+      margin: 40px auto;
+      padding: 0 20px 60px;
+    }
+
+    .page-title {
+      font-size: 1.8em;
+      font-weight: 500;
+      margin-bottom: 6px;
+      color: var(--soft-gray);
+    }
+
+    .page-subtitle {
+      color: #888;
+      font-size: 0.95em;
+      margin-bottom: 32px;
+    }
+
+    /* Drop zone */
+    .drop-zone {
+      border: 2px dashed var(--accent);
+      border-radius: 16px;
+      padding: 40px 20px;
+      text-align: center;
+      background: var(--cloud);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      position: relative;
+      margin-bottom: 24px;
+    }
+
+    .drop-zone.drag-over {
+      background: var(--sakura-pink);
+      border-color: var(--accent-dark);
+      transform: scale(1.01);
+    }
+
+    .drop-zone .drop-icon {
+      font-size: 2.5em;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .drop-zone .drop-label {
+      font-size: 1em;
+      color: var(--soft-gray);
+      margin-bottom: 8px;
+    }
+
+    .drop-zone .drop-hint {
+      font-size: 0.82em;
+      color: #aaa;
+    }
+
+    /* Paste input */
+    .input-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+
+    .url-input {
+      flex: 1;
+      padding: 10px 16px;
+      border: 1.5px solid #e0d8d0;
+      border-radius: 10px;
+      font-size: 0.9em;
+      font-family: inherit;
+      background: var(--cloud);
+      color: var(--soft-gray);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .url-input:focus {
+      border-color: var(--accent);
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 0.9em;
+      font-family: inherit;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-weight: 500;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-dark);
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      background: var(--lilac);
+      color: var(--soft-gray);
+    }
+
+    .btn-secondary:hover {
+      background: #d8d8f0;
+      transform: translateY(-1px);
+    }
+
+    /* Loading state */
+    .loading {
+      display: none;
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+      font-size: 0.9em;
+    }
+
+    .loading.visible {
+      display: block;
+    }
+
+    .spinner {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 2px solid var(--sakura-pink);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    /* Error state */
+    .error-msg {
+      display: none;
+      background: #fff0f0;
+      border: 1px solid #ffcccc;
+      border-radius: 10px;
+      padding: 12px 16px;
+      font-size: 0.88em;
+      color: #cc4444;
+      margin-bottom: 20px;
+    }
+
+    .error-msg.visible {
+      display: block;
+    }
+
+    /* Preview card */
+    .preview-card {
+      display: none;
+      background: var(--cloud);
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      overflow: hidden;
+      margin-bottom: 24px;
+    }
+
+    .preview-card.visible {
+      display: flex;
+      gap: 0;
+    }
+
+    .preview-art {
+      width: 120px;
+      height: 120px;
+      flex-shrink: 0;
+      object-fit: cover;
+    }
+
+    .preview-info {
+      padding: 16px 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .preview-title {
+      font-size: 1.05em;
+      font-weight: 500;
+      color: var(--soft-gray);
+    }
+
+    .preview-artist {
+      font-size: 0.88em;
+      color: #999;
+    }
+
+    .preview-spotify-link {
+      font-size: 0.82em;
+      color: var(--accent);
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    .preview-spotify-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Date field */
+    .date-row {
+      display: none;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .date-row.visible {
+      display: flex;
+    }
+
+    .date-row label {
+      font-size: 0.9em;
+      color: var(--soft-gray);
+      white-space: nowrap;
+    }
+
+    .date-input {
+      padding: 8px 14px;
+      border: 1.5px solid #e0d8d0;
+      border-radius: 10px;
+      font-size: 0.9em;
+      font-family: inherit;
+      color: var(--soft-gray);
+      background: var(--cloud);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .date-input:focus {
+      border-color: var(--accent);
+    }
+
+    /* YAML output */
+    .yaml-section {
+      display: none;
+    }
+
+    .yaml-section.visible {
+      display: block;
+    }
+
+    .yaml-label {
+      font-size: 0.85em;
+      font-weight: 500;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 8px;
+    }
+
+    .yaml-textarea {
+      width: 100%;
+      padding: 14px 16px;
+      border: 1.5px solid #e0d8d0;
+      border-radius: 12px;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 0.85em;
+      line-height: 1.6;
+      color: var(--soft-gray);
+      background: #fafaf8;
+      resize: vertical;
+      outline: none;
+      min-height: 110px;
+      transition: border-color 0.2s;
+    }
+
+    .yaml-textarea:focus {
+      border-color: var(--accent);
+    }
+
+    .yaml-actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .copy-feedback {
+      font-size: 0.82em;
+      color: #66bb88;
+      opacity: 0;
+      transition: opacity 0.3s;
+      align-self: center;
+    }
+
+    .copy-feedback.show {
+      opacity: 1;
+    }
+
+    /* Instructions */
+    .instructions {
+      margin-top: 28px;
+      background: var(--matcha-green);
+      border-radius: 12px;
+      padding: 16px 20px;
+      font-size: 0.88em;
+      line-height: 1.7;
+    }
+
+    .instructions strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 0.95em;
+    }
+
+    .instructions ol {
+      padding-left: 18px;
+    }
+
+    .instructions li {
+      margin-bottom: 4px;
+    }
+
+    .instructions a {
+      color: var(--accent-dark);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .instructions a:hover {
+      text-decoration: underline;
+    }
+
+    /* Reset button */
+    .reset-btn {
+      font-size: 0.8em;
+      color: #bbb;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-family: inherit;
+      transition: color 0.2s;
+      margin-left: auto;
+    }
+
+    .reset-btn:hover {
+      color: #888;
+    }
+
+    @media (max-width: 500px) {
+      .preview-card.visible {
+        flex-direction: column;
+      }
+      .preview-art {
+        width: 100%;
+        height: 200px;
+      }
+      .input-row {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Mochi Mix</h1>
+    <a href="/">&larr; Home</a>
+  </header>
+
+  <div class="page-wrapper">
+    <h2 class="page-title">Add a Song</h2>
+    <p class="page-subtitle">Paste a Spotify track link to generate a YAML entry for songs.yml</p>
+
+    <div class="drop-zone" id="dropZone">
+      <span class="drop-icon">🎵</span>
+      <p class="drop-label">Drop a Spotify link here</p>
+      <p class="drop-hint">or paste anywhere on the page (Cmd+V / Ctrl+V)</p>
+    </div>
+
+    <div class="input-row">
+      <input
+        type="text"
+        class="url-input"
+        id="urlInput"
+        placeholder="https://open.spotify.com/track/..."
+        autocomplete="off"
+        spellcheck="false"
+      >
+      <button class="btn btn-primary" id="lookupBtn">Look up</button>
+    </div>
+
+    <div class="loading" id="loading">
+      <span class="spinner"></span> Fetching track info&hellip;
+    </div>
+
+    <div class="error-msg" id="errorMsg"></div>
+
+    <div class="preview-card" id="previewCard">
+      <img class="preview-art" id="previewArt" src="" alt="">
+      <div class="preview-info">
+        <div class="preview-title" id="previewTitle"></div>
+        <div class="preview-artist" id="previewArtist"></div>
+        <a class="preview-spotify-link" id="previewLink" href="" target="_blank" rel="noopener"></a>
+      </div>
+    </div>
+
+    <div class="date-row" id="dateRow">
+      <label for="dateInput">Date:</label>
+      <input type="date" class="date-input" id="dateInput">
+      <button class="reset-btn" id="resetBtn">Reset</button>
+    </div>
+
+    <div class="yaml-section" id="yamlSection">
+      <div class="yaml-label">YAML entry — paste at the TOP of songs.yml</div>
+      <textarea class="yaml-textarea" id="yamlOutput" readonly></textarea>
+      <div class="yaml-actions">
+        <button class="btn btn-secondary" id="copyBtn">Copy YAML</button>
+        <a
+          class="btn btn-primary"
+          href="https://github.com/mochicoder/themochimix.github.io/edit/main/_data/songs.yml"
+          target="_blank"
+          rel="noopener"
+        >Edit songs.yml on GitHub</a>
+        <span class="copy-feedback" id="copyFeedback">Copied!</span>
+      </div>
+    </div>
+
+    <div class="instructions">
+      <strong>How to add a song:</strong>
+      <ol>
+        <li>Paste or drop a Spotify track link above</li>
+        <li>Confirm the date (defaults to today)</li>
+        <li>Copy the YAML entry</li>
+        <li>Open <a href="https://github.com/mochicoder/themochimix.github.io/edit/main/_data/songs.yml" target="_blank" rel="noopener">songs.yml on GitHub</a></li>
+        <li>Paste the entry at the very top of the file (before all other entries)</li>
+        <li>Commit the change — done!</li>
+      </ol>
+    </div>
+  </div>
+
+  <script>
+    // --- Utilities ---
+
+    function todayISO() {
+      const d = new Date();
+      const y = d.getFullYear();
+      const m = String(d.getMonth() + 1).padStart(2, '0');
+      const day = String(d.getDate()).padStart(2, '0');
+      return `${y}-${m}-${day}`;
+    }
+
+    function normalizeSpotifyURL(raw) {
+      raw = raw.trim();
+      // Handle spotify:track:ID URI format
+      const uriMatch = raw.match(/^spotify:track:([A-Za-z0-9]+)/);
+      if (uriMatch) {
+        return `https://open.spotify.com/track/${uriMatch[1]}`;
+      }
+      // Handle open.spotify.com/track/... URLs (strip query params for clean form)
+      const urlMatch = raw.match(/https?:\/\/open\.spotify\.com\/track\/([A-Za-z0-9]+)/);
+      if (urlMatch) {
+        return `https://open.spotify.com/track/${urlMatch[1]}`;
+      }
+      return null;
+    }
+
+    function extractTrackId(url) {
+      const m = url.match(/\/track\/([A-Za-z0-9]+)/);
+      return m ? m[1] : null;
+    }
+
+    function buildYAML(title, url, image, date) {
+      // Escape double quotes in title
+      const safeTitle = title.replace(/"/g, '\\"');
+      return `- title: "${safeTitle}"\n  url: "${url}"\n  image: "${image}"\n  date: "${date}"`;
+    }
+
+    // --- State ---
+    let currentData = null;
+
+    // --- DOM refs ---
+    const dropZone = document.getElementById('dropZone');
+    const urlInput = document.getElementById('urlInput');
+    const lookupBtn = document.getElementById('lookupBtn');
+    const loading = document.getElementById('loading');
+    const errorMsg = document.getElementById('errorMsg');
+    const previewCard = document.getElementById('previewCard');
+    const previewArt = document.getElementById('previewArt');
+    const previewTitle = document.getElementById('previewTitle');
+    const previewArtist = document.getElementById('previewArtist');
+    const previewLink = document.getElementById('previewLink');
+    const dateRow = document.getElementById('dateRow');
+    const dateInput = document.getElementById('dateInput');
+    const yamlSection = document.getElementById('yamlSection');
+    const yamlOutput = document.getElementById('yamlOutput');
+    const copyBtn = document.getElementById('copyBtn');
+    const copyFeedback = document.getElementById('copyFeedback');
+    const resetBtn = document.getElementById('resetBtn');
+
+    // Set default date
+    dateInput.value = todayISO();
+
+    // --- Core lookup ---
+    async function lookupTrack(rawUrl) {
+      const url = normalizeSpotifyURL(rawUrl);
+      if (!url) {
+        showError('That doesn\'t look like a Spotify track link. Try: https://open.spotify.com/track/...');
+        return;
+      }
+
+      showLoading(true);
+      hideError();
+      hideResults();
+
+      try {
+        const oembedUrl = `https://open.spotify.com/oembed?url=${encodeURIComponent(url)}`;
+        const res = await fetch(oembedUrl);
+        if (!res.ok) throw new Error(`oEmbed returned ${res.status}`);
+        const data = await res.json();
+
+        // oEmbed gives us: title (e.g. "Song Title" or "Song Title · Artist"),
+        // thumbnail_url, provider_name, html
+        let title = data.title || '';
+        // Spotify oEmbed title is often "Track · Artist" — split on " · " to separate
+        let artist = '';
+        if (title.includes(' · ')) {
+          const parts = title.split(' · ');
+          title = parts[0].trim();
+          artist = parts.slice(1).join(' · ').trim();
+        }
+
+        // Get the highest-res thumbnail available
+        // oEmbed thumbnail is usually 300x300; try to get 640x640 version
+        let image = data.thumbnail_url || '';
+        // Spotify CDN: swap size suffix if present
+        image = image.replace(/\/image\/[^/]+$/, (match) => match);
+        // Normalize to b273 (640px) size if it's a scdn URL
+        if (image.includes('i.scdn.co/image/')) {
+          // The oEmbed returns 300px (ab67616d00001e02...) — upgrade to 640px (ab67616d0000b273...)
+          image = image.replace('ab67616d00001e02', 'ab67616d0000b273');
+        }
+
+        currentData = { title, artist, url, image };
+        showPreview(currentData);
+        updateYAML();
+      } catch (err) {
+        showError('Could not fetch track info. Make sure the link is a public Spotify track URL and try again.');
+        console.error(err);
+      } finally {
+        showLoading(false);
+      }
+    }
+
+    function showLoading(on) {
+      loading.classList.toggle('visible', on);
+    }
+
+    function showError(msg) {
+      errorMsg.textContent = msg;
+      errorMsg.classList.add('visible');
+    }
+
+    function hideError() {
+      errorMsg.classList.remove('visible');
+    }
+
+    function showPreview({ title, artist, url, image }) {
+      previewArt.src = image;
+      previewArt.alt = title;
+      previewTitle.textContent = title;
+      previewArtist.textContent = artist;
+      previewLink.href = url;
+      previewLink.textContent = url;
+      previewCard.classList.add('visible');
+      dateRow.classList.add('visible');
+      yamlSection.classList.add('visible');
+    }
+
+    function hideResults() {
+      previewCard.classList.remove('visible');
+      dateRow.classList.remove('visible');
+      yamlSection.classList.remove('visible');
+      currentData = null;
+    }
+
+    function updateYAML() {
+      if (!currentData) return;
+      const date = dateInput.value || todayISO();
+      yamlOutput.value = buildYAML(currentData.title, currentData.url, currentData.image, date);
+    }
+
+    // --- Event listeners ---
+
+    // Lookup button
+    lookupBtn.addEventListener('click', () => {
+      const val = urlInput.value.trim();
+      if (val) lookupTrack(val);
+    });
+
+    // Enter key on input
+    urlInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        const val = urlInput.value.trim();
+        if (val) lookupTrack(val);
+      }
+    });
+
+    // Date change rebuilds YAML
+    dateInput.addEventListener('input', updateYAML);
+
+    // Reset
+    resetBtn.addEventListener('click', () => {
+      urlInput.value = '';
+      dateInput.value = todayISO();
+      hideResults();
+      hideError();
+    });
+
+    // Paste anywhere on page
+    document.addEventListener('paste', (e) => {
+      // Don't intercept if user is typing in the date or url inputs
+      const active = document.activeElement;
+      if (active === dateInput) return;
+
+      const text = (e.clipboardData || window.clipboardData).getData('text');
+      if (!text) return;
+
+      const normalized = normalizeSpotifyURL(text);
+      if (normalized) {
+        e.preventDefault();
+        urlInput.value = text.trim();
+        lookupTrack(text.trim());
+      } else if (active !== urlInput) {
+        // If pasting into the url input, let it happen normally
+        // For other elements, if it's not a spotify URL, just ignore
+      }
+    });
+
+    // Drag and drop on drop zone
+    dropZone.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      dropZone.classList.add('drag-over');
+    });
+
+    dropZone.addEventListener('dragleave', () => {
+      dropZone.classList.remove('drag-over');
+    });
+
+    dropZone.addEventListener('drop', (e) => {
+      e.preventDefault();
+      dropZone.classList.remove('drag-over');
+      const text = e.dataTransfer.getData('text/plain') || e.dataTransfer.getData('text/uri-list') || '';
+      if (text) {
+        urlInput.value = text.trim();
+        lookupTrack(text.trim());
+      }
+    });
+
+    // Click drop zone focuses input
+    dropZone.addEventListener('click', () => {
+      urlInput.focus();
+    });
+
+    // Copy YAML
+    copyBtn.addEventListener('click', async () => {
+      const text = yamlOutput.value;
+      if (!text) return;
+      try {
+        await navigator.clipboard.writeText(text);
+      } catch {
+        // Fallback
+        yamlOutput.select();
+        document.execCommand('copy');
+      }
+      copyFeedback.classList.add('show');
+      setTimeout(() => copyFeedback.classList.remove('show'), 2000);
+    });
+  </script>
+</body>
+</html>

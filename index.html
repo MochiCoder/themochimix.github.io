@@ -1,0 +1,40 @@
+---
+layout: default
+title: Home
+---
+
+<section class="sotd-section">
+  <h2 class="section-title">Song of the Day</h2>
+  {% assign sotd = site.data.songs.first %}
+  {% assign sotd_id = sotd.url | split: "/track/" | last | split: "?" | first %}
+  <div class="sotd-card">
+    <h3 class="sotd-title">{{ sotd.title }}</h3>
+    <p class="sotd-date">{{ sotd.date | date: "%B %-d, %Y" }}</p>
+    <iframe
+      style="border-radius:12px"
+      src="https://open.spotify.com/embed/track/{{ sotd_id }}?utm_source=generator"
+      width="100%"
+      height="152"
+      frameborder="0"
+      allowfullscreen
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+<section class="archive-section">
+  <h2 class="section-title">Song Archive</h2>
+  <div class="song-grid">
+    {% for song in site.data.songs %}
+      {% assign track_id = song.url | split: "/track/" | last | split: "?" | first %}
+      <a href="{{ song.url }}" class="song-item" target="_blank" rel="noopener">
+        <img src="{{ song.image }}" alt="{{ song.title }}" loading="lazy">
+        <div class="song-overlay">
+          <div class="song-title-text">{{ song.title }}</div>
+          <div class="song-date">{{ song.date | date: "%b %-d" }}</div>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+</section>

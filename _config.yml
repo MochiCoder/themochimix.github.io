@@ -1,2 +1,4 @@
 title: The Mochi Mix
 description: Place where I store my music ideas
+url: "https://themochimix.github.io"
+permalink: /blog/:year/:month/:day/:title/
