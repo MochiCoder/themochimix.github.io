@@ -203,6 +203,36 @@ a:hover {
   height: 100%;
   object-fit: cover;
   display: block;
+  background: linear-gradient(135deg, #efe7db 0%, #dcd2c2 100%);
+}
+
+.song-item.is-missing-art {
+  background: linear-gradient(135deg, #e8dfd4 0%, #cfc3b3 100%);
+}
+
+.song-item.is-missing-art::before {
+  content: "Loading art";
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(63, 56, 48, 0.72);
+}
+
+.song-item.has-art::before {
+  content: none;
+}
+
+.song-item.is-missing-art img:not([src]) {
+  opacity: 0;
+}
+
+.song-item.has-art img {
+  opacity: 1;
 }
 
 .song-overlay {

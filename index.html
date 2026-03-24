@@ -27,9 +27,13 @@ title: Home
   <h2 class="section-title">Song Archive</h2>
   <div class="song-grid">
     {% for song in site.data.songs %}
-      {% assign track_id = song.url | split: "/track/" | last | split: "?" | first %}
-      <a href="{{ song.url }}" class="song-item" target="_blank" rel="noopener">
-        <img src="{{ song.image }}" alt="{{ song.title }}" loading="lazy">
+      {% assign song_image = song.image | default: "" %}
+      <a href="{{ song.url }}" class="song-item{% unless song_image != "" %} is-missing-art{% endunless %}" target="_blank" rel="noopener">
+        <img
+          {% if song_image != "" %}src="{{ song_image }}"{% endif %}
+          data-spotify-url="{{ song.url }}"
+          alt="{{ song.title }}"
+          loading="lazy">
         <div class="song-overlay">
           <div class="song-title-text">{{ song.title }}</div>
           <div class="song-date">{{ song.date | date: "%b %-d" }}</div>
