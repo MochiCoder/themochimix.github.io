@@ -223,6 +223,14 @@ a:hover {
   color: rgba(63, 56, 48, 0.72);
 }
 
+.song-item.art-fetch-failed::before {
+  content: "Open in Spotify";
+}
+
+.song-item.art-rate-limited::before {
+  content: "Refresh soon";
+}
+
 .song-item.has-art::before {
   content: none;
 }
