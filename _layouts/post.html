@@ -19,14 +19,28 @@ layout: default
         {% endfor %}
       {% endif %}
     </p>
+
     {% if page.spotify %}
-      {% assign spotify_id = page.spotify | split: "/album/" | last | split: "?" | first %}
+      {% assign spotify_url = page.spotify %}
+      {% if spotify_url contains "/album/" %}
+        {% assign spotify_type = "album" %}
+        {% assign spotify_id = spotify_url | split: "/album/" | last | split: "?" | first %}
+        {% assign embed_height = "352" %}
+      {% elsif spotify_url contains "/track/" %}
+        {% assign spotify_type = "track" %}
+        {% assign spotify_id = spotify_url | split: "/track/" | last | split: "?" | first %}
+        {% assign embed_height = "152" %}
+      {% elsif spotify_url contains "/playlist/" %}
+        {% assign spotify_type = "playlist" %}
+        {% assign spotify_id = spotify_url | split: "/playlist/" | last | split: "?" | first %}
+        {% assign embed_height = "352" %}
+      {% endif %}
       <div class="post-spotify">
         <iframe
           style="border-radius:12px"
-          src="https://open.spotify.com/embed/album/{{ spotify_id }}?utm_source=generator"
+          src="https://open.spotify.com/embed/{{ spotify_type }}/{{ spotify_id }}?utm_source=generator&theme=0"
           width="100%"
-          height="352"
+          height="{{ embed_height }}"
           frameborder="0"
           allowfullscreen
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -34,11 +48,38 @@ layout: default
         </iframe>
       </div>
     {% endif %}
+
+    {% if page.vinyl_photo %}
+      <div class="vinyl-showcase">
+        <img src="{{ page.vinyl_photo }}" alt="Vinyl - {{ page.title }}">
+        {% if page.vinyl_caption %}
+          <p class="vinyl-caption">{{ page.vinyl_caption }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
   </header>
+
   <div class="post-content">
     {{ content }}
   </div>
+
   <footer class="post-footer">
     <a href="{{ '/blog/' | relative_url }}" class="back-link">&larr; Back to Blog</a>
   </footer>
 </article>
+
+{% if page.sticky_track %}
+  {% assign sticky_id = page.sticky_track | split: "/track/" | last | split: "?" | first %}
+  <div class="sticky-player" id="sticky-player">
+    <button class="sticky-player-close" onclick="document.getElementById('sticky-player').style.display='none'" aria-label="Close player">&times;</button>
+    <iframe
+      style="border-radius:12px"
+      src="https://open.spotify.com/embed/track/{{ sticky_id }}?utm_source=generator&theme=0"
+      width="100%"
+      height="80"
+      frameborder="0"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy">
+    </iframe>
+  </div>
+{% endif %}

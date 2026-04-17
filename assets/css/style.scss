@@ -494,6 +494,72 @@ a:hover {
   color: var(--accent-dark);
 }
 
+/* ─── Vinyl Photo ─── */
+.vinyl-showcase {
+  margin: 28px 0;
+  text-align: center;
+}
+
+.vinyl-showcase img {
+  max-width: 100%;
+  max-height: 480px;
+  border-radius: 14px;
+  box-shadow: 0 6px 28px rgba(0,0,0,0.12);
+  object-fit: contain;
+  display: inline-block;
+}
+
+.vinyl-caption {
+  font-size: 0.82em;
+  color: #aaa;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* ─── Sticky Player ─── */
+.sticky-player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(255, 249, 240, 0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 10px 16px 12px;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sticky-player iframe {
+  flex: 1;
+}
+
+.sticky-player-close {
+  background: none;
+  border: none;
+  font-size: 1.4em;
+  color: #aaa;
+  cursor: pointer;
+  padding: 4px 8px;
+  line-height: 1;
+  border-radius: 6px;
+  transition: color 0.2s, background 0.2s;
+  flex-shrink: 0;
+}
+
+.sticky-player-close:hover {
+  color: var(--soft-gray);
+  background: var(--sakura-pink);
+}
+
+/* Add bottom padding to body when sticky player is present */
+body:has(.sticky-player) .post {
+  padding-bottom: 120px;
+}
+
 /* ─── Animations ─── */
 .fade-in {
   opacity: 0;
