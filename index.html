@@ -33,6 +33,7 @@ title: Home
           {% if song_image != "" %}src="{{ song_image }}"{% endif %}
           data-spotify-url="{{ song.url }}"
           alt="{{ song.title }}"
+          referrerpolicy="no-referrer"
           loading="lazy">
         <div class="song-overlay">
           <div class="song-title-text">{{ song.title }}</div>
